@@ -1,26 +1,22 @@
-``` Javascript
-function imprimirSecoes(secao){
-    const nomeSecao  = secao.nome
-    
-    const idSecao = secao.id;
+Pequeno gerenciador de tarefas no estilo Kanban 
+Desenvolvido com as tecnologias (HTML, CSS, JAVASCRIPT, PHP)
+Banco de dados : MySQL
 
-    const header = appSecaoHeader(nomeSecao)
-    const footer = appSecaoFooter(idSecao)
+//para fazer a conexão com o banco de dados://
 
-    const appSecao = document.createElement("div")
-    appSecao.classList.add("app_secao")
-
-    appSecao.dataset.id = idSecao
-   
-    const  listaCards = document.createElement("ul")
-    listaCards.classList.add("dropzone")
-    listaCards.addEventListener("drop",drop)    
-    listaCards.addEventListener("dragover",allowDrop) 
-
-    appSecao.appendChild(header)
-    appSecao.appendChild(listaCards)
-    appSecao.appendChild(footer)
-    areaSecoes.appendChild(appSecao)
-
-    resetarControles();
-}
+<?php
+	$servidor = "localhost";
+	$usuario = "root";
+	$senha = "";
+	$dbname = "acesso";
+	
+	//Criar a conexao
+	$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+	
+	if(!$conn){
+		die("Falha na conexao: " . mysqli_connect_error());
+	}else{
+		//echo "Conexao realizada com sucesso";
+	}	
+	
+?>
