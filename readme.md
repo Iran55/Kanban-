@@ -2,7 +2,7 @@ Pequeno gerenciador de tarefas no estilo Kanban
 Desenvolvido com as tecnologias (HTML, CSS, JAVASCRIPT, PHP)
 Banco de dados : MySQL
 
-//para fazer a conexão com o banco de dados://
+para fazer a conexão com o banco de dados:
 
 <?php
 	$servidor = "localhost";
