@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  </head>
+  <body>
+    <div id="app">
+
+      <header style="left: 110px;height: 80px;">
+        <div class="app_nome" style="border-left-width: 10px;margin-left: 10px;">
+          <h1 style="height: 34px;width: 314px;">Gerenciador de tarefas</h1>
+        </div>
+        <div class="app_logo">
+        </div>
+        <div class="app_menu_header">
+        </div>
+      </header>
+
+      <ul class="menu">
+
+        <li title="home"><a href="#" class="menu-button home">menu</a></li>
+        
+        <li title="search"><a href="#" class="search">search</a></li>
+        <li title="pencil"><a href="#" class="pencil">pencil</a></li>
+        <li title="about"><a href="#" class="active about">about</a></li>
+        <li title="archive"><a href="#" class="archive">archive</a></li>
+        <li title="contact"><a href="#" class="contact">contact</a></li>
+      </ul>
+      
+      <ul class="menu-bar">
+          <li><a href="#" class="menu-button">Menu</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Editorial</a></li>
+          <li><a href="#">About</a></li>
+      </ul>
+
+      <section class="app_board">
+        <div class="app_secoes"style="margin-left: 80px;">
+ 
+         <div class="app_add_secao">
+            <button class="app_button_add_secao">Adicionar nova seção</button>
+            <div class="app_container_add_secao hidden">
+              <input type="text" placeholder="Nome seção"/>
+              <button class="app_input_add_secao">Add</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      
+      <div class="mensagem-validacao"style="border-left-width: 40px;left: 100px;">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          <small>Preencha os campos corretamente!</small>
+        </span>
+      </div>
+    </div>
+
+   
+    <script src="./assets/js/secao.js"></script>
+    <script src="./assets/js/card.js"></script>
+    <script src="./assets/js/workspace.js"></script>
+    <script src="./assets/js/controle.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
